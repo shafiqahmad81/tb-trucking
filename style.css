@@ -29,8 +29,8 @@ body {
   font-family: "Catamaran", sans-serif;
   background-color: var(--color-gray);
   color: var(--color-text);
-  font-size: 19px;
-  line-height: 33px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 /* Remove list styles */
@@ -58,7 +58,7 @@ img {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 /* =========================
@@ -370,26 +370,27 @@ nav ul li a:hover{
   background-color: var(--color-gray-light);
   max-width: 1440px;
   margin: 0 auto;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
 }
 .about-page .industries-wrap{
   max-width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
-
 .industries-inner{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 30px;
   position: relative;
   z-index: 99;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 42px;
 }
 .about-page .industries-inner{
   gap: 50px;
+  padding-bottom: 50px;
 }
+
 .industries-car{
   max-width: 100%;
   width: 100%;
@@ -399,11 +400,17 @@ nav ul li a:hover{
   max-width: 100%;
   width: 100%;
 }
+.industries-content h2{
+  margin-bottom: 18px;
+}
 .industry-item{
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-block: 30px;
+  margin-block: 13px;
+}
+.industry-item-content{
+  margin-top: 9px;
 }
 .industry-item .icon{
   max-width: 70px;
@@ -425,12 +432,12 @@ nav ul li a:hover{
   font-size: 17px;
   line-height: 29px;
 }
-.industries{
+/* .industries{
   display: flex;
   align-items: center;
   position: relative;
   flex-direction: column;
-}
+} */
 
 
 
@@ -612,7 +619,7 @@ nav ul li a:hover{
 /* Our form section start */
 .service-form{
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 30px 20px;
+  padding: 30px 10px;
   border-radius: 20px;
 }
 .service-form h2{
@@ -677,7 +684,8 @@ textarea {
   max-width: 100%;
   width: 100%;
   background-color: var(--color-gray);
-  padding: 20px;
+  padding: 15px 8px;
+  border-radius: 10px;
 }
 .contact-info h3{
   font-weight: 800;
@@ -765,7 +773,7 @@ textarea {
   width: 100%;
   border-radius: 5px;
   background-color: var(--color-gray);
-  padding: 30px;
+  padding: 16px;
   position: relative;
 }
 .testimonial-oth{
@@ -801,8 +809,8 @@ textarea {
 .footer-inner{
   display: flex;
   justify-content: space-between;
-  gap: 70px;
-  padding-block: 50px;
+  gap: 40px;
+  padding-block: 40px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -823,7 +831,7 @@ textarea {
   width: 100%;
   max-width: 100%;
   display: flex;
-  gap: 58px;
+  gap: 40px;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -924,7 +932,11 @@ textarea {
 }
 
 @media (min-width: 520px){
-  h1,
+  body {
+    font-size: 19px;
+    line-height: 33px;
+  }
+h1,
 .h1{
   font-size: 50px;
   font-weight: 800;
@@ -935,6 +947,15 @@ h2,
   font-size: 36px;
   font-weight: 800;
   line-height: 40px;
+}
+.container {
+  padding: 0 20px;
+}
+.contact-info{
+  padding: 20px;
+}
+.service-form{
+  padding: 30px 20px;
 }
 
  .recycle-service-item{
@@ -948,6 +969,7 @@ h2,
   }
 }
 @media (min-width: 769px){
+  
   .banar-content{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -982,13 +1004,14 @@ h2,
     flex-direction: row;
   }
   .about-section{
-    padding-block: 100px;
+    padding-top: 100px;
+    padding-bottom: 82px;
   }
   .industries-inner{
-    gap: 100px;
+    gap: 40px;
   }
   .our-service-wrap{
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   .blog-section{
@@ -1003,10 +1026,7 @@ h2,
     padding-top: 100px;
     padding-bottom: 84px;
   }
-  .about-page .industries-wrap{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  
   .recycle-section{
     padding-block: 100px;
   }
@@ -1016,12 +1036,26 @@ h2,
   .contact-page .service-form-wrap{
     padding-block: 102px;
   }
+  .about-page .industries-inner{
+    padding-bottom: 100px;
+  }
   .customer-overvew{
     width: 41.167%;
     text-align: start;
   }
   .testimonial-wrapper{
     width: 50%;
+  }
+  .testimonial-item{
+    padding: 30px;
+    margin-top: 14px;
+  }
+  .footer-inner{
+    gap: 70px;
+    padding-block: 49px;
+  }
+  .footer-content{
+    gap: 58px;
   }
   
   .front-img {
@@ -1068,7 +1102,7 @@ h2,
   padding-top: 101px;
   padding-bottom: 100px;
 }
-.contact-page
+
 h1,
 .h1{
   font-size: 80px;
@@ -1081,8 +1115,6 @@ h2,
   font-weight: 800;
   line-height: 57px;
 } 
-
-
 
   .header nav{
     display: flex;
@@ -1107,21 +1139,28 @@ h2,
 .about-us-content{
     max-width: 475px;
   }
+  
+.industries-wrap{
+  flex-direction: row;
+}
 .industries{
   flex-direction: row;
 }
   .industries-inner{
     flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 85px;
   }
   .industries-car{
     max-width: 525px;
   }
   
   .left-panel {
-  padding-left: 50px;
-  padding-right: 150px;
-  width: unset;
-}
+    padding-left: 50px;
+    padding-right: 150px;
+    width: unset;
+  }
 
   .right-panel{
     margin-left: -137px;
@@ -1142,7 +1181,9 @@ h2,
   }
   .about-page .industries-content{
     max-width: calc(100% - 574px);
+    margin-top: 37px;
   }
+  
   .service-area-wrap{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1177,9 +1218,16 @@ h2,
   .recycle-wrap{
     gap: 173px;
   }
+  .industries-inner{
+    gap: 100px;
+  }
+  
   .right-panel{
-    margin-left: -137px;
+    margin-left: -252px;
     padding-right: 120px;
+  }
+   .left-panel {
+    padding-right: 265px;
   }
   .footer-inner{
     flex-direction: row;
@@ -1191,5 +1239,8 @@ h2,
 @media (min-width: 1441px){
   .container{
     padding: 0 120px;
+  }
+  .industries-inner{
+    align-items: start;
   }
 }
