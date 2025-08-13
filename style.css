@@ -366,8 +366,10 @@ nav ul li a:hover{
 
 
 /* Industries style start */
-.industries-wrap{
+.industries-wrapper{
   background-color: var(--color-gray-light);
+}
+.industries-wrap{
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -1209,9 +1211,11 @@ h2,
   .recycle-service-item{
     max-width: calc(100% - 476px);
   }
+  
 
 }
 @media (min-width: 1281px) {
+ 
   .about-us-content{
     max-width: 589px;
   }
@@ -1237,10 +1241,7 @@ h2,
   }
 }
 @media (min-width: 1441px){
-  .container{
+   .container{
     padding: 0 120px;
-  }
-  .industries-inner{
-    align-items: start;
   }
 }
