@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Tb Trucking | About</title>
 </head>
@@ -43,9 +44,9 @@
       <!-- mobile menu -->
       <nav id="main-menu" class="mobile-menu hidden">
         <div id="close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="close-icon">
             <path
-              d="M9.156 6.313 6.312 9.155 22.157 25 6.22 40.969 9.03 43.78 25 27.844 40.938 43.78l2.843-2.843L27.844 25 43.687 9.156l-2.843-2.844L25 22.157Z" />
+              d="M4.707 3.293 3.293 4.707 10.586 12l-7.293 7.293 1.414 1.414L12 13.414l7.293 7.293 1.414-1.414L13.414 12l7.293-7.293-1.414-1.414L12 10.586 4.707 3.293z" />
           </svg>
         </div>
         <ul>
@@ -85,10 +86,7 @@
 
   <!-- Industres section start -->
   <section class="industries-wrap">
-    <div class="container industries">
-      <!-- <div class="industries-banar">
-        <img src="./assets/images/industries.png" alt="industries banar">
-      </div> -->
+    <div class="container">
       <div class="industries-inner">
         <div class="industries-car">
           <img src="./assets/images/about-professional.png" alt="about professional car">
@@ -204,9 +202,9 @@
               <h4>Michel Mike</h4>
               <p>Co-founder</p>
               <div class="social">
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
+                <a href="#"><img src="./assets/images/team-facebook.png" alt="Facebook"> </a>
+                <a href="#"><img src="./assets/images/team-twitter.png" alt="Twitter"> </a>
+                <a href="#"><img src="./assets/images/team-linkdin.png" alt="Linkedin"> </a>
               </div>
             </div>
           </div>
@@ -218,9 +216,9 @@
               <h4>Rick Disuza</h4>
               <p>Manager</p>
               <div class="social">
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
+                <a href="#"><img src="./assets/images/team-facebook.png" alt="Facebook"> </a>
+                <a href="#"><img src="./assets/images/team-twitter.png" alt="Twitter"> </a>
+                <a href="#"><img src="./assets/images/team-linkdin.png" alt="Linkedin"> </a>
               </div>
             </div>
           </div>
@@ -232,9 +230,9 @@
               <h4>Eilly Suze</h4>
               <p>Accountant</p>
               <div class="social">
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
-                <a href="#"><img src="./assets/images/team-facebook.png" alt="facebook-icon"> </a>
+                <a href="#"><img src="./assets/images/team-facebook.png" alt="Facebook"> </a>
+                <a href="#"><img src="./assets/images/team-twitter.png" alt="Twitter"> </a>
+                <a href="#"><img src="./assets/images/team-linkdin.png" alt="Linkedin"> </a>
               </div>
             </div>
           </div>
@@ -254,16 +252,42 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sunt corporis itaque sequi, assumenda
             voluptatum cupiditate error. Eveniet voluptates aperiam consequuntur pariatur ea saepe.</p>
         </div>
-        <div class="testimonial-item">
-          <p>Laboriosam sunt corporis itaque sequi, assumenda voluptatum cupiditate error. Eveniet voluptates aperiam
-            consequuntur pariatur ea saepe, dolores ut cumque doloribus.</p>
-          <div class="testimonial-oth">
-            <div class="oth">
-              <div><img src="./assets/images/testimonial-oth.png" alt="oth image"></div>
-              <h4>Deazy Gomez</h4>
-            </div>
-            <div class="quote">
-              <img src="./assets/images/quote-alt-right.png" alt="quote alt right">
+        <div class="testimonial-wrapper">
+          <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>Laboriosam sunt corporis itaque sequi, assumenda voluptatum cupiditate error. Eveniet voluptates
+                    aperiam consequuntur pariatur ea saepe, dolores ut cumque doloribus.</p>
+                  <div class="testimonial-oth">
+                    <div class="oth">
+                      <div><img src="./assets/images/testimonial-oth.png" alt="oth image"></div>
+                      <h4>Deazy Gomez</h4>
+                    </div>
+                    <div class="quote">
+                      <img src="./assets/images/quote-alt-right.png" alt="quote alt right">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>Laboriosam sunt corporis itaque sequi, assumenda voluptatum cupiditate error. Eveniet voluptates
+                    aperiam consequuntur pariatur ea saepe, dolores ut cumque doloribus.</p>
+                  <div class="testimonial-oth">
+                    <div class="oth">
+                      <div><img src="./assets/images/testimonial-oth.png" alt="oth image"></div>
+                      <h4>Deazy Johon</h4>
+                    </div>
+                    <div class="quote">
+                      <img src="./assets/images/quote-alt-right.png" alt="quote alt right">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -326,7 +350,7 @@
     </div>
   </footer>
   <!-- footer section end -->
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./assets/js/main.js"></script>
 </body>
 
