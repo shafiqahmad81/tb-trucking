@@ -377,6 +377,13 @@ nav ul li a:hover{
 }
 .about-page .industries-wrap{
   max-width: 100%;
+  background-color: var(--color-gray-light);
+}
+.about-page .industries-content{
+  margin-top: -4px;
+}
+.about-page .industries-content h5{
+  margin-bottom: 18px;
 }
 .industries-inner{
   gap: 30px;
@@ -1183,7 +1190,6 @@ h2,
   }
   .about-page .industries-content{
     max-width: calc(100% - 574px);
-    margin-top: 37px;
   }
   
   .service-area-wrap{
