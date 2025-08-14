@@ -26,7 +26,7 @@
             <li><a href="./service.html">Our services</a></li>
             <li><a class="active" href="#">Contact</a></li>
           </ul>
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </nav>
         <button class="hamburger" id="menu-btn" aria-label="Menu">
           <span></span>
@@ -55,7 +55,7 @@
           <li><a class="active" href="#">Contact</a></li>
         </ul>
         <div class="make">
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </div>
       </nav>
     </div>
@@ -70,12 +70,12 @@
         <div class="form-wrapper">
           <form class="contact-form">
             <div class="form-row">
-              <input type="text" placeholder="First name">
-              <input type="text" placeholder="Last name">
+              <input type="text" placeholder="First name" required>
+              <input type="text" placeholder="Last name" required>
             </div>
             <div class="form-row">
-              <input type="text" placeholder="Phone number">
-              <input type="email" placeholder="Email address">
+              <input type="text" placeholder="Phone number" required>
+              <input type="email" placeholder="Email address" required>
             </div>
             <div class="form-row">
               <input type="text" placeholder="Address">
@@ -110,7 +110,7 @@
               </div>
               <div>
                 <h4>Mail us</h4>
-                <p>battle.tyrone@yahoo.com</p>
+                <a href="#">battle.tyrone@yahoo.com</a>
               </div>
             </div>
             <div class="information-wrap">
@@ -119,7 +119,7 @@
               </div>
               <div>
                 <h4>Phone number</h4>
-                <p>917 681 4657</p>
+                <a href="#">917 681 4657</a>
               </div>
             </div>
           </div>
@@ -175,8 +175,10 @@
               </div>
               <p>10 am - 5 pm, Monday - Saturday</p>
             </div>
-            <input type="text" placeholder="Your address">
-            <button type="submit" class="btn">Submit</button>
+            <form action="#">
+              <input type="text" placeholder="Your address" required>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
         </div>
       </div>

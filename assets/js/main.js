@@ -27,3 +27,17 @@ const close = document.getElementById("close");
       prevEl: '.swiper-button-prev',
     },
   });
+
+  
+  
+document.getElementById("loadMoreBtn").addEventListener("click", function () {
+  // service-area-wrap এর ভিতরের সব card-hidden element নাও
+  const hiddenItems = document.querySelectorAll(".service-area-wrap .card-hidden");
+  
+  hiddenItems.forEach(function (item) {
+    item.classList.remove("card-hidden");
+  });
+
+  // সব দেখানোর পর Load More button hide করে দাও
+  this.style.display = "none";
+});

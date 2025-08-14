@@ -27,7 +27,7 @@
             <li><a class="active" href="#">Our services</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </nav>
         <button class="hamburger" id="menu-btn" aria-label="Menu">
           <span></span>
@@ -56,7 +56,7 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="make">
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </div>
       </nav>
     </div>
@@ -114,9 +114,48 @@
             </div>
           </div>
         </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="load-button">
-        <button class="btn" type="button">Load more services</button>
+        <button class="btn" id="loadMoreBtn" type="button">Load more services</button>
       </div>
     </div>
   </section>
@@ -212,8 +251,10 @@
               </div>
               <p>10 am - 5 pm, Monday - Saturday</p>
             </div>
-            <input type="text" placeholder="Your address">
-            <button type="submit" class="btn">Submit</button>
+            <form action="#">
+              <input type="text" placeholder="Your address" required>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
         </div>
       </div>

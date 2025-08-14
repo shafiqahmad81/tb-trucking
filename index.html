@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <!-- banar section start -->
   <section class=" banar-wrap">
     <div class="container">
@@ -27,7 +28,7 @@
             <li><a href="./service.html">Our services</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </nav>
         <button class="hamburger" id="menu-btn" aria-label="Menu">
           <span></span>
@@ -39,7 +40,7 @@
         <h1>Home <span>trash & recycling</span> company</h1>
         <p>consectetur adipisicing elit. Veritatis reprehenderit magnam qui odit est commodi ut illo nostrum quas ab
           veniam quod assumenda fugit blanditiis</p>
-        <a class="btn" href="#">Get started</a>
+        <a class="btn" href="#service">Get started</a>
       </div>
       <!-- mobile menu -->
       <nav id="main-menu" class="mobile-menu hidden">
@@ -56,7 +57,7 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="make">
-          <button class="btn">Make a pickup call</button>
+          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
         </div>
       </nav>
     </div>
@@ -103,11 +104,10 @@
             possimus repellendus, rerum fugiat inventore nisi! Nihil reprehenderit expedita exercitationem officia
             perspiciatis veritatis assumenda nulla ratione voluptatem provident magnam dignissimos asperiores voluptates
             inventore</p>
-          <button class="btn">Know more</button>
+          <a href="about.html" class="btn">Know more</a>
         </div>
         <div class="image-stack">
-          <img src="./assets/images/about-us-1.png" alt="bg image">
-          <img src="./assets/images/about-us-2.png" alt="front image" class="front-img">
+          <img src="./assets/images/about-us-image.png" alt="about image">
         </div>
       </div>
     </div>
@@ -116,50 +116,48 @@
 
   <!-- Industres section start -->
   <section class="industries-wrapper">
-    <div class="industries-wrap industries">
-      <div class="left-panel">
-        <h2>Industries</h2>
+    <div class="industries-inner">
+      <div class="industries-image">
+        <div class="industries-car">
+          <img src="./assets/images/industries-car.png" alt="industries car">
+        </div>
       </div>
-      <div class="right-panel">
-        <div class="industries-inner">
-          <div class="industries-car">
-            <img src="./assets/images/industries-car.png" alt="industries car">
+
+      <div class="industries-content">
+        <div class="content-area">
+          <h5>INDUSTRIES</h5>
+          <h2>We serve at</h2>
+          <p>Consectetur adipisicing elit Ducimus consequatur cumque quos molestias. Fuga pariatur iure et nostrum,
+            dolorum, rem aliquam illum possimus repellendus</p>
+          <div class="industry-item">
+            <div class="icon">
+              <img src="./assets/images/maki-restaurant.png" alt="maki restaurant">
+            </div>
+            <div class="industry-item-content">
+              <h3>Hotel & restaurant</h3>
+              <p>Fuga pariatur iure et nostrum, dolorum, rem aliquam illum possimus repellendus</p>
+            </div>
           </div>
-          <div class="industries-content">
-            <h5>INDUSTRIES</h5>
-            <h2>We serve at</h2>
-            <p>Consectetur adipisicing elit Ducimus consequatur cumque quos molestias. Fuga pariatur iure et nostrum,
-              dolorum, rem aliquam illum possimus repellendus</p>
-            <div class="industry-item">
-              <div class="icon">
-                <img src="./assets/images/maki-restaurant.png" alt="maki restaurant">
-              </div>
-              <div class="industry-item-content">
-                <h3>Hotel & restaurant</h3>
-                <p>Fuga pariatur iure et nostrum, dolorum, rem aliquam illum possimus repellendus</p>
-              </div>
+          <div class="industry-item">
+            <div class="icon">
+              <img src="./assets/images/grocery-store.png" alt="grocery store">
             </div>
-            <div class="industry-item">
-              <div class="icon">
-                <img src="./assets/images/grocery-store.png" alt="grocery store">
-              </div>
-              <div class="industry-item-content">
-                <h3>Grocery store</h3>
-                <p>Optio tempora repellat magni inventore quos vitae impedit cum commodi accusantium corporis labore
-                  error
-                  distinctio</p>
-              </div>
+            <div class="industry-item-content">
+              <h3>Grocery store</h3>
+              <p>Optio tempora repellat magni inventore quos vitae impedit cum commodi accusantium corporis labore
+                error
+                distinctio</p>
             </div>
-            <div class="industry-item">
-              <div class="icon">
-                <img src="./assets/images/medical-symbol.png" alt="medical symbol">
-              </div>
-              <div class="industry-item-content">
-                <h3>Medical & hospital</h3>
-                <p>Dolores ut cumque doloribus tempore dolorem asperiores animi quibusdam deserunt nisi accusantium
-                  veniam
-                  reprehenderit.</p>
-              </div>
+          </div>
+          <div class="industry-item">
+            <div class="icon">
+              <img src="./assets/images/medical-symbol.png" alt="medical symbol">
+            </div>
+            <div class="industry-item-content">
+              <h3>Medical & hospital</h3>
+              <p>Dolores ut cumque doloribus tempore dolorem asperiores animi quibusdam deserunt nisi accusantium
+                veniam
+                reprehenderit.</p>
             </div>
           </div>
         </div>
@@ -220,31 +218,70 @@
             </div>
           </div>
         </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-area card-hidden">
+          <img src="./assets/images/service-img-3.png" alt="service images">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./assets/images/service-vector-3.png" alt="vector icon">
+            </div>
+            <div class="service-info">
+              <h4>Scrap metal pick up</h4>
+              <p>Laboriosam sunt corporis itaque sequi assumenda.</p>
+              <a href="#">Read more <img src="./assets/images/arrow-right.png" alt="arrow"></a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="load-button">
-        <button class="btn" type="button">Load more services</button>
+        <button class="btn" id="loadMoreBtn" type="button">Load more services</button>
       </div>
     </div>
   </section>
   <!-- our service section end -->
 
   <!-- service form section start -->
-  <section class="service-form-wrap">
+  <section id="service" class="service-form-wrap">
     <div class="container ">
       <div class="service-form">
         <h2>For enjoy our service</h2>
         <div class="form-wrapper">
           <form class="contact-form">
             <div class="form-row">
-              <input type="text" placeholder="First name">
-              <input type="text" placeholder="Last name">
+              <input type="text" placeholder="First name" required>
+              <input type="text" placeholder="Last name" required>
             </div>
             <div class="form-row">
-              <input type="text" placeholder="Phone number">
-              <input type="email" placeholder="Email address">
+              <input type="text" placeholder="Phone number" required>
+              <input type="email" placeholder="Email address" required>
             </div>
             <div class="form-row">
-              <input type="text" placeholder="Address">
+              <input type="text" placeholder="Address" required>
               <select>
                 <option value="">Service</option>
                 <option value="web">Web Design</option>
@@ -262,7 +299,7 @@
           <div class="contact-info">
             <h3>Contact information</h3>
             <div class="information-wrap">
-              <div class="icon">
+              <div href="#" class="icon">
                 <img src="./assets/images/contact-vactor-1.png" alt="vactor icon">
               </div>
               <div>
@@ -271,21 +308,21 @@
               </div>
             </div>
             <div class="information-wrap">
-              <div class="icon">
+              <a href="#" class="icon">
                 <img src="./assets/images/contact-vactor-2.png" alt="vactor icon">
-              </div>
+              </a>
               <div>
                 <h4>Mail us</h4>
-                <p>battle.tyrone@yahoo.com</p>
+                <a href="#">battle.tyrone@yahoo.com</a>
               </div>
             </div>
             <div class="information-wrap">
-              <div class="icon">
+              <a href="#" class="icon">
                 <img src="./assets/images/contact-vactor-3.png" alt="vactor icon">
-              </div>
+              </a>
               <div>
                 <h4>Phone number</h4>
-                <p>917 681 4657</p>
+                <a href="#">917 681 4657</a>
               </div>
             </div>
           </div>
@@ -424,8 +461,10 @@
               </div>
               <p>10 am - 5 pm, Monday - Saturday</p>
             </div>
-            <input type="text" placeholder="Your address">
-            <button type="submit" class="btn">Submit</button>
+            <form action="#">
+              <input type="text" placeholder="Your address" required>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
         </div>
       </div>

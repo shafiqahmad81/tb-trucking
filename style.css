@@ -56,9 +56,9 @@ img {
    CONTAINER
 ========================= */
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 20px;
 }
 
 /* =========================
@@ -334,13 +334,13 @@ nav ul li a:hover{
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 100px;
+  padding-top: 98px;
   flex-direction: column;
 }
 .about-us-content{
   max-width: 100%;
   width: 100%;
-  margin-top: -22px;
+  margin-top: -4px;
 }
 .about-page .about-us-content{
   margin-top: 13px;
@@ -351,17 +351,7 @@ nav ul li a:hover{
 .about-us-content p{
   margin-bottom: 30px;
 }
-.image-stack {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  
-}
 
-.front-img {
-    margin-top: 0;
-    margin-left: 0;
-}
 /* About section end */
 
 
@@ -387,24 +377,42 @@ nav ul li a:hover{
 }
 .industries-inner{
   gap: 30px;
-  position: relative;
   z-index: 99;
   flex-direction: column;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 42px;
+  align-items: start;
 }
 .about-page .industries-inner{
   gap: 50px;
   padding-bottom: 50px;
 }
 
-.industries-car{
-  max-width: 100%;
-  width: 100%;
-
+.industries-image{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to right, var(--color-green) calc(100% - 100px), transparent 100px);
+    padding: 50px 0;
 }
+.industries-content .content-area{
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content-area{
+  max-width: 100%;
+  
+}
+.image-wrap{
+  display: flex;
+}
+.industries{
+  position: relative;
+}
+
+
 .industries-content{
   max-width: 100%;
   width: 100%;
@@ -441,14 +449,6 @@ nav ul li a:hover{
   font-size: 17px;
   line-height: 29px;
 }
-/* .industries{
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: column;
-} */
-
-
 
 .left-panel {
   background-color: #4b8b3b; 
@@ -470,11 +470,6 @@ nav ul li a:hover{
   padding-left: 20px;
 }
 
-/* .right-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 /* Industries style end */
 
@@ -529,22 +524,29 @@ nav ul li a:hover{
 .recycle-content h5{
   margin-bottom: 18px;
 }
+.recycle-service p{
+  font-size: 13px;
+  line-height: 20px;
+}
 .recycle-service-item{
   max-width: 100%;
   width: 100%;
   display: grid;
-  gap: 77px;
-  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .recycle-service{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 10px;
 }
 .recycle-service:last-child{
   margin-bottom: 0px;
+}
+.recycle-service div{
+  width: 20px;
+  height: 20px;
 }
 /* about pages end */
 
@@ -592,6 +594,9 @@ nav ul li a:hover{
   position: relative;
   z-index: 999;
   border-radius: 10px;
+}
+.card-hidden{
+  display: none;
 }
 .service-icon{
   max-width: 40px;
@@ -716,6 +721,15 @@ textarea {
   font-size: 16px;
   line-height: 24px;
 }
+.information-wrap a{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  transition: 0.3s ease-in;
+}
+.information-wrap a:hover{
+  color: var(--color-green);
+}
 .information-wrap .icon{
   max-width: 60px;
   width: 100%;
@@ -784,6 +798,7 @@ textarea {
   background-color: var(--color-gray);
   padding: 16px;
   position: relative;
+  cursor: grab;
 }
 .testimonial-oth{
   display: flex;
@@ -967,17 +982,22 @@ h2,
   padding: 30px 20px;
 }
 
- .recycle-service-item{
-    grid-template-columns: repeat(2, 1fr);
-  }
   .recycle-service{
     justify-content: start;
   }
   .left-panel h2{
    font-size: 100px; 
   }
+  .recycle-service div{
+    width: unset;
+    height: unset;
+  }
+  .recycle-service p{
+    font-size: unset;
+    line-height: unset;
+  }
 }
-@media (min-width: 769px){
+@media (min-width: 768px){
   
   .banar-content{
     padding-top: 100px;
@@ -1012,12 +1032,30 @@ h2,
     gap: 8.833%;
     flex-direction: row;
   }
+  .recycle-service-item{
+    gap: 77px;
+  }
+  .recycle-service{
+    gap: 15px;
+  }
   .about-section{
     padding-top: 100px;
-    padding-bottom: 82px;
+    padding-bottom: 98px;
   }
   .industries-inner{
+    flex-direction: row;
     gap: 40px;
+  }
+  .content-area{
+    max-width: 570px;
+    margin-left: 0px;
+  }
+  .industries-image{
+    background: linear-gradient(to right, var(--color-green) calc(100% - 274px), transparent 100px);
+    
+  }
+  .industries-content .content-area{
+    margin-left: 0px;
   }
   .our-service-wrap{
     padding-top: 100px;
@@ -1046,6 +1084,7 @@ h2,
     padding-block: 102px;
   }
   .about-page .industries-inner{
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   .customer-overvew{
@@ -1065,11 +1104,6 @@ h2,
   }
   .footer-content{
     gap: 58px;
-  }
-  
-  .front-img {
-    margin-top: -299px;
-    margin-left: -192px;
   }
   
   .footer-logo .logo{
@@ -1158,11 +1192,9 @@ h2,
   .industries-inner{
     flex-direction: row;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 85px;
   }
-  .industries-car{
-    max-width: 525px;
+  .industries-image{
+    padding-block: 54px;
   }
   
   .left-panel {
@@ -1246,8 +1278,8 @@ h2,
     max-width: calc(100% - 305px);
   }
 }
-@media (min-width: 1441px){
-   .container{
-    padding: 0 120px;
-  }
+@media (min-width: 1440px){
+   .industries-image{
+    justify-content: flex-end;
+   }
 }
