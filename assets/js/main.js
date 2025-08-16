@@ -6,18 +6,10 @@ const close = document.getElementById("close");
 
 window.addEventListener('scroll', function() {
   const header = document.getElementById('header');
-  const bannerWrap = document.querySelector('.banar-wrap');
-  const banner = document.querySelector('.banar-content'); 
-   // banner content selector
-
-  if (window.scrollY > 0) {
-    header.classList.add('sticky');
-    bannerWrap.classList.add('scrolled');
-    banner.classList.add('scrolled'); // scroll হলে margin কমবে
+  if (window.scrollY > 50) { // 50px স্ক্রল হলেই কাজ করবে
+    header.classList.add('scrolled');
   } else {
-    header.classList.remove('sticky');
-    bannerWrap.classList.remove('scrolled');
-    banner.classList.remove('scrolled'); // scroll top এ margin আবার বাড়বে
+    header.classList.remove('scrolled');
   }
 });
  hamburgerBtn.addEventListener('click', () => {

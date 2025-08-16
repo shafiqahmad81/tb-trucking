@@ -10,61 +10,54 @@
 </head>
 
 <body class="service-page">
-  <!-- banar section start -->
-  <section class="banar-wrap">
-    <div class="container">
-      <div class="overlay">
-        <img src="./assets/images/overlay.png" alt="overlay">
-      </div>
-      <header class="header">
-        <a href="index.html" class="logo">
-          <img src="./assets/images/tb-trucking-logo.png" alt="logo icon">
-        </a>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a class="active" href="#">Our services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
-        </nav>
-        <button class="hamburger" id="menu-btn" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </header>
-      <div class="banar-content">
-        <h1>Our services</h1>
-        <p>consectetur adipisicing elit. Veritatis reprehenderit magnam qui odit est commodi ut illo nostrum quas ab
-          veniam quod assumenda fugit blanditiis</p>
-        <a class="btn" href="#">Get started</a>
-      </div>
-      <!-- mobile menu -->
-      <nav id="main-menu" class="mobile-menu hidden">
-        <div id="close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="close-icon">
-            <path
-              d="M4.707 3.293 3.293 4.707 10.586 12l-7.293 7.293 1.414 1.414L12 13.414l7.293 7.293 1.414-1.414L13.414 12l7.293-7.293-1.414-1.414L12 10.586 4.707 3.293z" />
-          </svg>
-        </div>
+  <!-- Header section start -->
+  <header class="header-section" id="header">
+    <div class="header container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tb-trucking-logo.png" alt="logo icon">
+      </a>
+      <nav id="main-menu" class="menu-visible menu-hidden">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a class="active" href="#">Our services</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <div class="make">
-          <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
-        </div>
+        <a href="tel:+917 681 4657" class="btn">Make a pickup call</a>
       </nav>
+      <button class="hamburger" id="menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="close-icon-wrap close-hidden" id="close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="close-icon">
+        <path
+          d="M4.707 3.293 3.293 4.707 10.586 12l-7.293 7.293 1.414 1.414L12 13.414l7.293 7.293 1.414-1.414L13.414 12l7.293-7.293-1.414-1.414L12 10.586 4.707 3.293z" />
+      </svg>
+    </div>
+  </header>
+  <!-- Header section end -->
+
+  <!-- banar section start -->
+  <section class="banar-wrap">
+    <div class="container">
+      <div class="overlay">
+        <img src="./assets/images/overlay.png" alt="overlay">
+      </div>
+      <div class="banar-content">
+        <h1>Our services</h1>
+        <p>consectetur adipisicing elit. Veritatis reprehenderit magnam qui odit est commodi ut illo nostrum quas ab
+          veniam quod assumenda fugit blanditiis</p>
+        <a class="btn" href="#our-service">Get started</a>
+      </div>
     </div>
   </section>
   <!-- banar section end -->
 
   <!-- our service section start -->
-  <section class="our-service-wrap">
+  <section id="our-service" class="our-service-wrap">
     <div class="container">
       <div class="title-area">
         <h5>OUR SERVICES</h5>
