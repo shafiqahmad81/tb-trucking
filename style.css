@@ -181,17 +181,18 @@ header.sticky{
 }
 
 .header nav {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    flex-direction: column;
-    background: var(--color-gray-light);
-    padding-top: 88px;
-    width: 100%;
-    height: 103vh;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  flex-direction: column;
+  background: var(--color-gray-light);
+  padding-top: 88px;
+  width: 100%;
+  height: 103vh;
+  z-index: 1000;
 }
 
 .close-icon-wrap{
@@ -347,7 +348,7 @@ nav ul li a:hover{
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 45px;
+  gap: 30px;
 }
 .trash-item{
   display: flex;
@@ -597,7 +598,7 @@ nav ul li a:hover{
 
 .our-service-wrap{
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .about-page .our-service-wrap{
   padding-top: 40px;
@@ -1048,6 +1049,9 @@ h5,
 #header {
   top: 20px;
 }
+.our-service-wrap{
+  padding-bottom: 60px;
+}
 .container {
   padding: 0 20px;
 }
@@ -1128,6 +1132,7 @@ input, textarea, select {
 
   .trash-wrap{
     grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
   }
   .service-area-wrap{
     grid-template-columns: repeat(2, 1fr);
